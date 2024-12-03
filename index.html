@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  Learning
+  <main class="main" id="main-content" role="main">
+    <div class="container">
+      <div class="card flex">
+        <img src="assets/images/illustration-article.svg" alt="Illustration of the article" class="card__img">
+        <article class="card__content flex">
+          <span class="card__category">
+            Learning
+          </span>
+          <time class="card__pub-date" datetime="2023-12-21">
+            Published 21 Dec 2023
+          </time>
+          <a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS" class="card__link" aria-label="Read more about HTML & CSS foundations">
+            <h2 class="card__title">
+              HTML & CSS foundations
+            </h2>
+          </a>
+          <p class="card__descr">
+            These languages are the backbone of every website, defining structure, content, and presentation.
+          </p>
+        </article>
+        <span class="card__author author flex">
+          <img src="assets/images/image-avatar.webp" alt="Avatar of Greg Hooper, the author" class="author__avatar">
+          <span class="author__name">
+            Greg Hooper
+          </span>
+        </span>
+      </div>
+    </div>
+  </main>
 
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <aside class="attribution" aria-label="Attribution section" role="complementary">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      aria-label="Visit Frontend Mentor challenge page">Frontend Mentor</a>.
+    <br>
+    Coded by <a href="https://www.frontendmentor.io/profile/adambeckercodes" target="_blank"
+      aria-label="Visit my profile on Frontend Mentor page">Dias Adambekov</a>.
+  </aside>
 </body>
+
 </html>
